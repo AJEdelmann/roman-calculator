@@ -31,6 +31,7 @@ test("Should return undefined (valid number). In this case, MMMCMXCIX (3999)", (
 const num1 = "XVII"; // 17
 const num2 = "III"; // 3
 const add1 = toRoman(toNumber(num1) + toNumber(num2)); // 17 + 3
+const add3 = toRoman(toNumber(num1) + toNumber(num2) + toNumber(num2)); // 17 + 3 + 3
 const sub1 = toRoman(toNumber(num1) - toNumber(num2)); // 17 - 3
 const mul1 = toRoman(toNumber(num1) * toNumber(num2)); // 17 * 3
 const severalOperations = toRoman(
@@ -39,6 +40,10 @@ const severalOperations = toRoman(
 
 test("Should return XX (17+3 = 20)", () => {
   expect(add1).toBe("XX");
+});
+
+test("Should return XXIII (17+3+3 = 23)", () => {
+  expect(add3).toBe("XXIII");
 });
 
 test("Should return XIV (17-3 = 14)", () => {

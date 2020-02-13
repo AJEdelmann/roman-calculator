@@ -1,0 +1,162 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Calculator/> matches the snapshot 1`] = `
+<div
+  className="calc-wrapper"
+>
+  <div
+    className="display-wrapper  "
+  >
+    <div
+      className="display-error-message"
+    >
+      
+    </div>
+    <div
+      className="display-number"
+    >
+      
+    </div>
+  </div>
+  <div
+    className="numbers-wrapper"
+  >
+    <div
+      className="button number "
+      onClick={[Function]}
+      style={null}
+    >
+      <p
+        className="p-operator"
+      >
+        C
+      </p>
+    </div>
+    <div
+      className="button number "
+      onClick={[Function]}
+      style={null}
+    >
+      <p
+        className="p-operator"
+      >
+        D
+      </p>
+    </div>
+    <div
+      className="button number "
+      onClick={[Function]}
+      style={null}
+    >
+      <p
+        className="p-operator"
+      >
+        M
+      </p>
+    </div>
+    <div
+      className="button number "
+      onClick={[Function]}
+      style={null}
+    >
+      <p
+        className="p-operator"
+      >
+        V
+      </p>
+    </div>
+    <div
+      className="button number "
+      onClick={[Function]}
+      style={null}
+    >
+      <p
+        className="p-operator"
+      >
+        X
+      </p>
+    </div>
+    <div
+      className="button number "
+      onClick={[Function]}
+      style={null}
+    >
+      <p
+        className="p-operator"
+      >
+        L
+      </p>
+    </div>
+    <div
+      className="button utility ce"
+      onClick={[Function]}
+      style={null}
+    >
+      <p
+        className="p-operator"
+      >
+        CE
+      </p>
+    </div>
+    <div
+      className="button number "
+      onClick={[Function]}
+      style={null}
+    >
+      <p
+        className="p-operator"
+      >
+        I
+      </p>
+    </div>
+    <div
+      className="button utility "
+      onClick={[Function]}
+      style={null}
+    >
+      <p
+        className="p-operator"
+      >
+        =
+      </p>
+    </div>
+  </div>
+  <div
+    className="operators-wrapper"
+  >
+    <div
+      className="button operator"
+      onClick={[Function]}
+      style={null}
+    >
+      <p
+        className="p-operator"
+      >
+        +
+      </p>
+    </div>
+    <div
+      className="button operator"
+      onClick={[Function]}
+      style={null}
+    >
+      <p
+        className="p-operator"
+      >
+        -
+      </p>
+    </div>
+    <div
+      className="button operator"
+      onClick={[Function]}
+      style={null}
+    >
+      <p
+        className="p-operator"
+      >
+        ×
+      </p>
+    </div>
+  </div>
+</div>
+`;

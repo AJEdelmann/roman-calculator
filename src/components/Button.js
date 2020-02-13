@@ -1,15 +1,14 @@
 import React from "react";
 
 const Button = props => {
-  const { className, children, handleClick, error, testId } = props;
+  const { className, handleClick, error, data } = props;
   return (
     <div
-      data-testId={testId}
       className={className}
       style={error ? { pointerEvents: "none", opacity: "0.2" } : null}
-      onClick={() => handleClick(children)}
+      onClick={() => handleClick(data)}
     >
-      {children}
+      <p className="p-operator">{data}</p>
     </div>
   );
 };

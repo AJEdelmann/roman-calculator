@@ -20,7 +20,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
 
+.fade-in {
+  animation-name: fade-in;
+  animation-duration: .5s;
+  animation-timing-function: ease-in;
 }
 
 .item {
@@ -28,11 +33,9 @@ body {
   justify-content: center;
 }
 
-/* Header */
+/* ============== HEADER ============== */
 .header {
   cursor: default;
-  /* font-family: 'Spectral SC', serif; */
-  /* font-family: 'Open Sans Condensed', sans-serif; */
   font-family: 'Raleway', sans-serif;
   font-size: 2rem;
   color: #fff;
@@ -64,7 +67,6 @@ body {
   width: 400px;
   border: 1px solid white;
   border-radius: 10px;
-
 }
 
 /* ============== INSTRUCTIONS ============== */
@@ -98,25 +100,15 @@ body {
   animation-duration: 0.5s;
 }
 
-.fade-in {
-  animation-name: fade-in;
-  animation-duration: .5s;
-  animation-timing-function: ease-in;
-}
-
 .title {
   font-size: 1.2rem;
   font-weight: bold;
-  /* font-family: 'Spectral SC', serif; */
-  /* font-family: 'Open Sans Condensed', sans-serif; */
   font-family: 'Raleway', sans-serif;
   margin: 0 0 10px 0;
 }
 
 .text {
   font-size: 1rem;
-  /* font-family: 'Spectral SC', serif; */
-  /* font-family: 'Open Sans Condensed', sans-serif; */
   font-family: 'Raleway', sans-serif;
 }
 
@@ -144,8 +136,6 @@ body {
 
 .display-number {
   text-align: right;
-  /* font-family: 'Spectral SC', serif; */
-  /* font-family: 'Open Sans Condensed', sans-serif; */
   font-family: 'Raleway', sans-serif;
   font-size: 2rem;
   letter-spacing: 2px;
@@ -161,9 +151,7 @@ body {
 }
 
 .display-error-message {
-  /* font-family: 'Roboto', sans-serif; */
-  font-family: 'Open Sans Condensed', sans-serif;
-  /* font-family: 'Raleway', sans-serif; */
+  font-family: 'Raleway', sans-serif;
   font-size: .8rem;
   text-align: left;
   color: #D4AF37;
@@ -210,8 +198,6 @@ body {
 .number {
   width: 50px;
   height: 50px;
-  /* font-family: 'Spectral SC', serif; */
-  /* font-family: 'Open Sans Condensed', sans-serif; */
   font-family: 'Raleway', sans-serif;
   border-radius: 50%;
   border: 1px solid #fff;
@@ -224,8 +210,6 @@ body {
 .operator {
   width: 50px;
   height: 50px;
-  /* font-family: 'Spectral SC', serif; */
-  /* font-family: 'Open Sans Condensed', sans-serif; */
   font-family: 'Raleway', sans-serif;
   border-radius: 50%;
   background: #2b3b42;

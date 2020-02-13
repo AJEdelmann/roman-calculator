@@ -10,6 +10,7 @@ const Calculator = () => {
   const [prevNum, setPrevNum] = useState("");
   const [result, setResult] = useState("");
   const [operator, setOperator] = useState("");
+  // const [history, setHistory] = useState("");
 
   // Data for rendering the buttons
   const numbersKeys = ["C", "D", "M", "V", "X", "L", "CE", "I", "="];
@@ -30,6 +31,7 @@ const Calculator = () => {
     setPrevNum(input);
     setInput("");
     setOperator(operator);
+    // setHistory(`${history} ${input} ${operator} `);
   };
 
   const evaluate = () => {
@@ -47,10 +49,10 @@ const Calculator = () => {
       // In case the user click the equal button without previously selecting an operator
       operation = toRoman(curNumber);
     }
-
     setResult(operation);
     setInput(operation);
     setOperator("");
+    // setHistory(`${history} ${input}`);
   };
 
   useEffect(() => {
@@ -66,7 +68,7 @@ const Calculator = () => {
         {numbersKeys.map(k => {
           return (
             <Button
-              // testId="number"
+              data={k}
               key={k}
               error={k !== "CE" ? error : null}
               handleClick={
@@ -85,14 +87,12 @@ const Calculator = () => {
         {operatorsKeys.map(k => {
           return (
             <Button
-              // testId="operator"
               key={k}
               error={error}
               className="button operator"
               handleClick={calculation}
-            >
-              <p className="p-operator">{k}</p>
-            </Button>
+              data={k}
+            ></Button>
           );
         })}
       </div>
