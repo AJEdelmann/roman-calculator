@@ -13,7 +13,7 @@ A calculator that can add, subtract and multiply Roman numerals
 
 Run:
 
-`npm i
+###`npm i`
 
 npm start - Runs the app in the development mode.
 
