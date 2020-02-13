@@ -54,21 +54,21 @@ const Main = () => {
         setFootnote("Click if you want to repeat the instructions");
         setCountMessage(0);
         break;
+
+      default:
     }
   };
   return (
     <>
       <div className="item left">{/* <img src={RomanHelmet} /> */}</div>
 
-      <div className="item center calculator">
+      <div className="item center calculator instructions-bounce ">
         <Calculator />
       </div>
-
-      <div className="item right">{/* <img src={RomanHelmet} /> */}</div>
-
       <div className="item character" onClick={updateMessage}>
         <Instructions message={message} footnote={footnote} bounce={bounce} />
       </div>
+      <div className="item right">{/* <img src={RomanHelmet} /> */}</div>
     </>
   );
 };

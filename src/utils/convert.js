@@ -27,7 +27,6 @@ export const toRoman = number => {
   if (number > 3999 || number < 1) {
     return "Error";
   }
-
   let numRoman = "";
 
   for (let n of Object.keys(mapNumbers)) {

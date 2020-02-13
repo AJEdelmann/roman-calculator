@@ -66,7 +66,7 @@ const Calculator = () => {
         {numbersKeys.map(k => {
           return (
             <Button
-              testId="number"
+              // testId="number"
               key={k}
               error={k !== "CE" ? error : null}
               handleClick={
@@ -85,13 +85,13 @@ const Calculator = () => {
         {operatorsKeys.map(k => {
           return (
             <Button
-              testId="operator"
+              // testId="operator"
               key={k}
               error={error}
               className="button operator"
               handleClick={calculation}
             >
-              {k}
+              <p className="p-operator">{k}</p>
             </Button>
           );
         })}

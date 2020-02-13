@@ -5,28 +5,8 @@ const Instructions = props => {
 
   return (
     <div className={`instructions ${bounce ? `instructions-bounce` : null}`}>
-      <span
-        style={{
-          fontFamily: "'Spectral SC', serif",
-          fontSize: "1rem",
-          color: "rgb(153, 32, 11)",
-          fontWeight: "bold"
-        }}
-      >
-        {message}
-      </span>
-      {footnote && (
-        <span
-          style={{
-            display: "block",
-            fontFamily: "'Roboto', sans-serif",
-            fontSize: "0.8rem",
-            marginTop: "5px"
-          }}
-        >
-          {footnote}
-        </span>
-      )}
+      <h5 className="title">{message}</h5>
+      {footnote && <span className="text">{footnote}</span>}
     </div>
   );
 };

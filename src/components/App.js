@@ -4,8 +4,8 @@ import "../styles/App.css";
 
 const App = () => {
   return (
-    <div className="main-container">
-      <header className="item header">Roman Calculator</header>
+    <div className="main-container fade-in">
+      <header className="item header">ROMAN CALCULATOR</header>
       <Main />
     </div>
   );
