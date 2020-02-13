@@ -2,14 +2,14 @@
 
 A calculator that can add, subtract and multiply Roman numerals
 
-## Built with:
+## Built with
 
 - React Hooks – For all the UI components
 - JavaScript – To handle calcutions and validations (with Regex)
 - CSS – No frameworks here. Just pure CSS (with Flexbox, Grid, light Animation and some media queries).
 - Jest and React Testing Library – For unit testing
 
-## Installation:
+## Installation
 
 Run:
 
