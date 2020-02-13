@@ -24,8 +24,10 @@ export const validateNumber = roman => {
 };
 
 export const toRoman = number => {
-  if (number > 3999 || number < 1) {
-    return "Error";
+  if (number > 3999) {
+    return "Tooooo much";
+  } else if (number < 1) {
+    return "Romans are positive!";
   }
   let numRoman = "";
 

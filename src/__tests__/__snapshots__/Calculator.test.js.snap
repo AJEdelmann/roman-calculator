@@ -2,11 +2,16 @@
 
 exports[`<Calculator/> matches the snapshot 1`] = `
 <div
-  className="calc-wrapper"
+  className="calculator instructions-bounce "
 >
   <div
     className="display-wrapper  "
   >
+    <div
+      className="display-history"
+    >
+      
+    </div>
     <div
       className="display-error-message"
     >

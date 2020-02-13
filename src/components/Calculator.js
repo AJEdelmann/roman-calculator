@@ -10,7 +10,7 @@ const Calculator = () => {
   const [prevNum, setPrevNum] = useState("");
   const [result, setResult] = useState("");
   const [operator, setOperator] = useState("");
-  // const [history, setHistory] = useState("");
+  const [history, setHistory] = useState("");
 
   // Data for rendering the buttons
   const numbersKeys = ["C", "D", "M", "V", "X", "L", "CE", "I", "="];
@@ -24,14 +24,17 @@ const Calculator = () => {
     setInput(prevInput => prevInput + val);
   };
 
-  const clearInput = () => setInput("");
+  const clearInput = () => {
+    setInput("");
+    setHistory("");
+  };
 
   // Input manipulation triggered after user click an operator
   const calculation = operator => {
     setPrevNum(input);
     setInput("");
     setOperator(operator);
-    // setHistory(`${history} ${input} ${operator} `);
+    setHistory(`${history} ${input} ${operator} `);
   };
 
   const evaluate = () => {
@@ -52,17 +55,19 @@ const Calculator = () => {
     setResult(operation);
     setInput(operation);
     setOperator("");
-    // setHistory(`${history} ${input}`);
+    setHistory(`${history} ${input}`);
   };
 
   useEffect(() => {
     setError(validateNumber(input));
     setCurNum(input);
-  });
+  }, [input]);
 
   return (
-    <div className="calc-wrapper">
-      <Display error={error}>{input}</Display>
+    <div className="calculator instructions-bounce ">
+      <Display error={error} history={history}>
+        {input}
+      </Display>
 
       <div className="numbers-wrapper">
         {numbersKeys.map(k => {

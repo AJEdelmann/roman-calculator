@@ -70,18 +70,18 @@ const severalOperations2 = toRoman(
   toNumber(num4) * toNumber(num5) + toNumber(num3) - toNumber(num4)
 ); // (21 * 200) + (11) - (21) = 4190
 
-test('Should return "Error" -  number exceed limit (3807+200= 4007)', () => {
-  expect(add2).toBe("Error");
+test('Should return "Tooooo much" -  number exceed limit (3807+200= 4007)', () => {
+  expect(add2).toBe("Tooooo much");
 });
 
-test('Should return "Error" -  not accept negative number (11-21= -10)', () => {
-  expect(sub2).toBe("Error");
+test('Should return "Romans are positive!" -  not accept negative number (11-21= -10)', () => {
+  expect(sub2).toBe("Romans are positive!");
 });
 
-test('Should return "Error" -  number exceed limit (21 * 200= 4200)', () => {
-  expect(mul2).toBe("Error");
+test('Should return "Tooooo much" -  number exceed limit (21 * 200= 4200)', () => {
+  expect(mul2).toBe("Tooooo much");
 });
 
-test('Should return "Error" -  number exceed limit ((21 * 200) + (11) - (21) = 4190)', () => {
-  expect(severalOperations2).toBe("Error");
+test('Should return "Tooooo much" -  number exceed limit ((21 * 200) + (11) - (21) = 4190)', () => {
+  expect(severalOperations2).toBe("Tooooo much");
 });
