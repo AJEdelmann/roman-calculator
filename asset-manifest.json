@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/roman-calculator/static/css/main.9d905a01.chunk.css",
+    "main.js": "/roman-calculator/static/js/main.b72608f2.chunk.js",
+    "main.js.map": "/roman-calculator/static/js/main.b72608f2.chunk.js.map",
+    "runtime-main.js": "/roman-calculator/static/js/runtime-main.cc3949b9.js",
+    "runtime-main.js.map": "/roman-calculator/static/js/runtime-main.cc3949b9.js.map",
+    "static/js/2.56d180ca.chunk.js": "/roman-calculator/static/js/2.56d180ca.chunk.js",
+    "static/js/2.56d180ca.chunk.js.map": "/roman-calculator/static/js/2.56d180ca.chunk.js.map",
+    "index.html": "/roman-calculator/index.html",
+    "precache-manifest.d1b1db476b29122168d88aff880e5f1b.js": "/roman-calculator/precache-manifest.d1b1db476b29122168d88aff880e5f1b.js",
+    "service-worker.js": "/roman-calculator/service-worker.js",
+    "static/css/main.9d905a01.chunk.css.map": "/roman-calculator/static/css/main.9d905a01.chunk.css.map",
+    "static/js/2.56d180ca.chunk.js.LICENSE.txt": "/roman-calculator/static/js/2.56d180ca.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cc3949b9.js",
+    "static/js/2.56d180ca.chunk.js",
+    "static/css/main.9d905a01.chunk.css",
+    "static/js/main.b72608f2.chunk.js"
+  ]
+}
